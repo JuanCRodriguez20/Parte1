@@ -42,4 +42,5 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
       - name: copy in bucket
-        run: aws s3 cp arreglo.py s3://bucketcr7
+        run: |
+          aws s3 cp arreglo.py s3://bucketcr7
